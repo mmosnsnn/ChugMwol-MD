@@ -80,7 +80,7 @@ global.loadDatabase = async function loadDatabase() {
 loadDatabase()
 
 //-- SESSION
-global.authFolder = `sessions`
+global.authFolder = `session`
 const { state, saveCreds } = await useMultiFileAuthState(global.authFolder)
 let { version, isLatest } = await fetchLatestBaileysVersion() 
 /*const connectionOptions = {
